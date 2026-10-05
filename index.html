@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phoenix Cohort - Explore Our Solar System Through Data</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER SECTION -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="logo-wrapper">
+        <!-- SVG Logo replacing text as required by Rubric -->
+        <svg class="header-logo" width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Solar System Logo">
+          <circle cx="50" cy="50" r="28" fill="url(#sun-gradient)" />
+          <ellipse cx="50" cy="50" rx="44" ry="18" stroke="#60A5FA" stroke-width="4" transform="rotate(-25 50 50)" />
+          <circle cx="82" cy="35" r="7" fill="#93C5FD" />
+          <defs>
+            <linearGradient id="sun-gradient" x1="22" y1="22" x2="78" y2="78" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#3B82F6" />
+              <stop offset="1" stop-color="#1D4ED8" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="logo-text">CosmoData</span>
+      </div>
+
+      <nav class="header-nav">
+        <a href="#hero" class="nav-link">Home</a>
+        <a href="#video-section" class="nav-link">Overview</a>
+        <a href="#gallery-section" class="nav-link">Planets</a>
+        <a href="#table-section" class="nav-link">Data</a>
+        <a href="#form-section" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+
+    <!-- 1. HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="section-container hero-container">
+        <div class="hero-text-content">
+          <h1 class="hero-title">Explore Our Solar System Through Data</h1>
+          <p class="hero-description">
+            Uncover the secret story of space through detailed data analysis, visual guides, and interactive tools for planetary exploration.
+          </p>
+          <div class="hero-cta-group">
+            <!-- CTAs connected to fragment IDs as required by Rubric -->
+            <a href="#form-section" class="btn btn-primary">Contact Us</a>
+            <a href="#table-section" class="btn btn-secondary">Explore Data</a>
+          </div>
+        </div>
+        <div class="hero-image-wrapper">
+          <svg class="hero-illustration" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg" aria-img="Planetary globe graphic">
+            <defs>
+              <radialGradient id="globeGrad" cx="30%" cy="30%" r="70%">
+                <stop offset="0%" stop-color="#60A5FA" />
+                <stop offset="50%" stop-color="#2563EB" />
+                <stop offset="100%" stop-color="#0F172A" />
+              </radialGradient>
+              <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#93C5FD" stop-opacity="0.8" />
+                <stop offset="100%" stop-color="#3B82F6" stop-opacity="0.2" />
+              </linearGradient>
+            </defs>
+            <circle cx="250" cy="250" r="180" fill="url(#globeGrad)" />
+            <!-- Atmosphere Glow -->
+            <circle cx="250" cy="250" r="185" stroke="#93C5FD" stroke-width="3" stroke-opacity="0.5" fill="none" />
+            <!-- Planetary Rings -->
+            <ellipse cx="250" cy="250" rx="230" ry="60" stroke="url(#ringGrad)" stroke-width="12" transform="rotate(-20 250 250)" />
+            <ellipse cx="250" cy="250" rx="210" ry="50" stroke="#60A5FA" stroke-width="3" stroke-dasharray="8 6" transform="rotate(-20 250 250)" opacity="0.7" />
+            <!-- Continents / Details overlay -->
+            <path d="M160 180 Q200 140 260 170 T340 220 Q300 290 220 260 Z" fill="#93C5FD" opacity="0.25" />
+            <path d="M180 300 Q240 270 300 320 T220 380 Z" fill="#93C5FD" opacity="0.2" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section separator HR -->
+    <hr class="section-divider">
+
+    <!-- 2. VIDEO MULTIMEDIA SECTION -->
+    <section class="video-section" id="video-section">
+      <div class="section-container video-container">
+        <div class="video-wrapper">
+          <!-- Video requirements: autoplay, muted, loop, width, height attributes -->
+          <video class="planetary-video" width="640" height="360" autoplay muted loop poster="assets/planet_1.jpg">
+            <source src="assets/space_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="video-text-content">
+          <h2 class="section-title">How Planetary Data Helps Us Understand Space</h2>
+          <p class="section-description">
+            Planetary science relies heavily on observational data collected by probes, rovers, and orbital telescopes. By examining orbital mechanics, surface temperatures, atmospheric pressure, and mass density, scientists can reconstruct the origins of our solar system and predict long-term celestial evolution.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section separator HR -->
+    <hr class="section-divider">
+
+    <!-- 3. IMAGE MULTIMEDIA SECTION -->
+    <section class="gallery-section" id="gallery-section">
+      <div class="section-container gallery-container">
+        <div class="gallery-header">
+          <h2 class="section-title text-center">Visualizing the Differences Between Planets</h2>
+          <p class="section-description text-center">
+            A visual overview comparing surface characteristics, atmospheres, and environmental dynamics across major celestial bodies.
+          </p>
+        </div>
+
+        <div class="image-grid">
+          <!-- Image 1 -->
+          <figure class="planet-card">
+            <img src="assets/planet_1.jpg" alt="High resolution satellite scan showing Mercury cratered terrain" width="360" height="225" class="planet-img">
+            <figcaption class="planet-caption">Figure 1: Mercury – The rocky, heavily cratered innermost planet.</figcaption>
+          </figure>
+
+          <!-- Image 2 -->
+          <figure class="planet-card">
+            <img src="assets/planet_2.jpg" alt="Atmospheric radar view of Venus dense yellow cloud layer" width="360" height="225" class="planet-img">
+            <figcaption class="planet-caption">Figure 2: Venus – Enshrouded in thick carbon dioxide cloud cover.</figcaption>
+          </figure>
+
+          <!-- Image 3 -->
+          <figure class="planet-card">
+            <img src="assets/planet_3.jpg" alt="Orbital viewpoint of Earth oceans swirling weather and continents" width="360" height="225" class="planet-img">
+            <figcaption class="planet-caption">Figure 3: Earth – Our vibrant blue marble sustaining liquid water.</figcaption>
+          </figure>
+
+          <!-- Image 4 -->
+          <figure class="planet-card">
+            <img src="assets/planet_4.jpg" alt="Red dust terrain and deep canyon formations on Mars surface" width="360" height="225" class="planet-img">
+            <figcaption class="planet-caption">Figure 4: Mars – The rust-red desert world with Valles Marineris.</figcaption>
+          </figure>
+
+          <!-- Image 5 -->
+          <figure class="planet-card">
+            <img src="assets/planet_5.jpg" alt="Jupiter giant red spot storm system amidst cloud bands" width="360" height="225" class="planet-img">
+            <figcaption class="planet-caption">Figure 5: Jupiter – The massive gas giant featuring the Great Red Spot.</figcaption>
+          </figure>
+
+          <!-- Image 6 -->
+          <figure class="planet-card">
+            <img src="assets/planet_6.jpg" alt="Saturn spectacular ice ring system encircling golden planet" width="360" height="225" class="planet-img">
+            <figcaption class="planet-caption">Figure 6: Saturn – Adorned with expansive rings of ice and rock.</figcaption>
+          </figure>
+
+          <!-- Image 7 -->
+          <figure class="planet-card">
+            <img src="assets/planet_7.jpg" alt="Cyan blue featureless sphere of Uranus icy atmosphere" width="360" height="225" class="planet-img">
+            <figcaption class="planet-caption">Figure 7: Uranus – An ice giant tilted sideways on its orbital axis.</figcaption>
+          </figure>
+
+          <!-- Image 8 -->
+          <figure class="planet-card">
+            <img src="assets/planet_8.jpg" alt="Deep azure blue windswept upper clouds of Neptune" width="360" height="225" class="planet-img">
+            <figcaption class="planet-caption">Figure 8: Neptune – Home to supersonic winds and icy dark storms.</figcaption>
+          </figure>
+
+          <!-- Image 9 -->
+          <figure class="planet-card">
+            <img src="assets/planet_9.jpg" alt="Dwarf planet Pluto heart shaped nitrogen ice plain Tombaugh Regio" width="360" height="225" class="planet-img">
+            <figcaption class="planet-caption">Figure 9: Pluto – Distant dwarf planet with nitrogen glaciers.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section separator HR -->
+    <hr class="section-divider">
+
+    <!-- 4. TABLE SECTION -->
+    <section class="table-section" id="table-section">
+      <div class="section-container table-container">
+        <div class="table-header">
+          <h2 class="section-title">Planetary Facts at a Glance</h2>
+          <p class="section-description">
+            A comprehensive breakdown of key physical parameters and planetary characteristics in our solar system (Source: NASA / JPL Planetary Fact Sheet).
+          </p>
+        </div>
+
+        <div class="table-wrapper">
+          <table class="planetary-table">
+            <!-- Table caption as required by Rubric -->
+            <caption class="table-caption">Table 1: Physical and Orbital Properties of Solar System Bodies</caption>
+            <thead>
+              <tr>
+                <th scope="col" id="col-category">Category</th>
+                <th scope="col" id="col-planet">Planet Name</th>
+                <th scope="col" id="col-mass">Mass (10<sup>24</sup> kg)</th>
+                <th scope="col" id="col-diameter">Diameter (km)</th>
+                <th scope="col" id="col-density">Density (kg/m<sup>3</sup>)</th>
+                <th scope="col" id="col-gravity">Gravity (m/s<sup>2</sup>)</th>
+                <th scope="col" id="col-distance">Distance from Sun (10<sup>6</sup> km)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Row Group 1: Terrestrial Planets -->
+              <tr>
+                <th scope="rowgroup" rowspan="4" class="group-header">Terrestrial Planets</th>
+                <th scope="row" class="planet-header">Mercury</th>
+                <td>0.330</td>
+                <td>4,879</td>
+                <td>5,429</td>
+                <td>3.7</td>
+                <td>57.9</td>
+              </tr>
+              <tr>
+                <th scope="row" class="planet-header">Venus</th>
+                <td>4.87</td>
+                <td>12,104</td>
+                <td>5,243</td>
+                <td>8.9</td>
+                <td>108.2</td>
+              </tr>
+              <tr>
+                <th scope="row" class="planet-header">Earth</th>
+                <td>5.97</td>
+                <td>12,756</td>
+                <td>5,514</td>
+                <td>9.8</td>
+                <td>149.6</td>
+              </tr>
+              <tr>
+                <th scope="row" class="planet-header">Mars</th>
+                <td>0.642</td>
+                <td>6,792</td>
+                <td>3,934</td>
+                <td>3.7</td>
+                <td>228.0</td>
+              </tr>
+
+              <!-- Row Group 2: Gas Giants -->
+              <tr>
+                <th scope="rowgroup" rowspan="2" class="group-header">Gas Giants</th>
+                <th scope="row" class="planet-header">Jupiter</th>
+                <td>1,898.0</td>
+                <td>142,984</td>
+                <td>1,326</td>
+                <td>23.1</td>
+                <td>778.5</td>
+              </tr>
+              <tr>
+                <th scope="row" class="planet-header">Saturn</th>
+                <td>568.0</td>
+                <td>120,536</td>
+                <td>687</td>
+                <td>9.0</td>
+                <td>1,432.0</td>
+              </tr>
+
+              <!-- Row Group 3: Ice Giants -->
+              <tr>
+                <th scope="rowgroup" rowspan="2" class="group-header">Ice Giants</th>
+                <th scope="row" class="planet-header">Uranus</th>
+                <td>86.8</td>
+                <td>51,118</td>
+                <td>1,270</td>
+                <td>8.7</td>
+                <td>2,867.0</td>
+              </tr>
+              <tr>
+                <th scope="row" class="planet-header">Neptune</th>
+                <td>102.0</td>
+                <td>49,528</td>
+                <td>1,638</td>
+                <td>11.0</td>
+                <td>4,515.0</td>
+              </tr>
+
+              <!-- Row Group 4: Dwarf Planets -->
+              <tr>
+                <th scope="rowgroup" rowspan="1" class="group-header">Dwarf Planets</th>
+                <th scope="row" class="planet-header">Pluto</th>
+                <td>0.013</td>
+                <td>2,376</td>
+                <td>1,850</td>
+                <td>0.7</td>
+                <td>5,906.4</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section separator HR -->
+    <hr class="section-divider">
+
+    <!-- 5. FORM SECTION -->
+    <section class="form-section" id="form-section">
+      <div class="section-container form-container">
+        <div class="form-header">
+          <h2 class="section-title">Have Questions About Planetary Science?</h2>
+          <p class="section-description">
+            Reach out to our astrophysics research team. Complete all required fields below to send an inquiry.
+          </p>
+        </div>
+
+        <form action="#" method="post" class="contact-form">
+          <fieldset class="form-fieldset">
+            <legend class="form-legend">Personal & Contact Details</legend>
+            
+            <div class="form-grid">
+              <!-- First Name Field: 10-20 chars, required -->
+              <div class="form-group">
+                <label for="first-name" class="form-label">First Name <span class="required-star">*</span></label>
+                <input 
+                  type="text" 
+                  id="first-name" 
+                  name="first_name" 
+                  class="form-input" 
+                  minlength="10" 
+                  maxlength="20" 
+                  placeholder="e.g. Christopher" 
+                  required
+                >
+                <small class="form-hint">Must be 10 to 20 characters long.</small>
+              </div>
+
+              <!-- Last Name Field: 10-20 chars, required -->
+              <div class="form-group">
+                <label for="last-name" class="form-label">Last Name <span class="required-star">*</span></label>
+                <input 
+                  type="text" 
+                  id="last-name" 
+                  name="last_name" 
+                  class="form-input" 
+                  minlength="10" 
+                  maxlength="20" 
+                  placeholder="e.g. Montgomery" 
+                  required
+                >
+                <small class="form-hint">Must be 10 to 20 characters long.</small>
+              </div>
+
+              <!-- Phone Field: max 11 chars, required -->
+              <div class="form-group">
+                <label for="phone" class="form-label">Phone Number <span class="required-star">*</span></label>
+                <input 
+                  type="tel" 
+                  id="phone" 
+                  name="phone" 
+                  class="form-input" 
+                  maxlength="11" 
+                  placeholder="e.g. 08012345678" 
+                  required
+                >
+                <small class="form-hint">Maximum 11 digits allowed.</small>
+              </div>
+
+              <!-- City Dropdown: 10 places, required -->
+              <div class="form-group">
+                <label for="city" class="form-label">City <span class="required-star">*</span></label>
+                <select id="city" name="city" class="form-select" required>
+                  <option value="" disabled selected>-- Select your city --</option>
+                  <option value="New York">New York</option>
+                  <option value="London">London</option>
+                  <option value="Tokyo">Tokyo</option>
+                  <option value="Paris">Paris</option>
+                  <option value="Sydney">Sydney</option>
+                  <option value="Toronto">Toronto</option>
+                  <option value="Berlin">Berlin</option>
+                  <option value="Mumbai">Mumbai</option>
+                  <option value="Lagos">Lagos</option>
+                  <option value="Chicago">Chicago</option>
+                </select>
+                <small class="form-hint">Select your location from the 10 listed cities.</small>
+              </div>
+            </div>
+
+            <!-- Message Textarea Field: max 100 chars, required -->
+            <div class="form-group full-width">
+              <label for="message" class="form-label">Message / Inquiry <span class="required-star">*</span></label>
+              <textarea 
+                id="message" 
+                name="message" 
+                class="form-textarea" 
+                maxlength="100" 
+                rows="4" 
+                placeholder="Enter your planetary question here (up to 100 characters)..." 
+                required
+              ></textarea>
+              <small class="form-hint">Maximum length of 100 characters.</small>
+            </div>
+          </fieldset>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary btn-submit">Submit Inquiry</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER SECTION -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo-wrapper">
+            <svg class="footer-logo" width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="28" fill="#60A5FA" />
+              <ellipse cx="50" cy="50" rx="44" ry="18" stroke="#93C5FD" stroke-width="4" transform="rotate(-25 50 50)" />
+            </svg>
+            <span class="logo-text text-white">CosmoData</span>
+          </div>
+          <p class="footer-tagline">Exploring celestial boundaries with high-precision planetary analytics.</p>
+        </div>
+
+        <nav class="footer-nav">
+          <!-- Footer links using <a> tags and '#' as href as required by Rubric -->
+          <ul class="footer-links-list">
+            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+            <li><a href="#" class="footer-link">Terms of Service</a></li>
+            <li><a href="#" class="footer-link">Data Sources</a></li>
+            <li><a href="#" class="footer-link">API Documentation</a></li>
+            <li><a href="#" class="footer-link">Research Papers</a></li>
+            <li><a href="#" class="footer-link">Support & FAQs</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <hr class="footer-divider">
+
+      <div class="footer-bottom">
+        <p class="copyright-text">&copy; 2026 Solar System Data Explorer. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#" class="legal-link">Security</a>
+          <a href="#" class="legal-link">Cookies</a>
+          <a href="#" class="legal-link">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
